@@ -1,0 +1,55 @@
+@mixin container {
+  font-size : 16px;
+  line-height : 1.4;
+
+  max-width : 50em;
+  
+  margin : 0 auto;
+  padding-top:2em;
+  background-color : #ffffff;
+  &hover {
+  }
+}
+
+@mixin padding {
+  padding : 0.4em;
+  padding-left : 0.8em;
+  
+}
+
+@mixin coolEmphasis{
+  &:after {
+    display : inline-block;
+
+    width : 140px;
+    height : 3px;
+    margin : 0 0 8px 20px;
+
+    content : " ";
+
+    background-color : #999999;
+    text-shadow : none;
+  }
+  &:before {
+    display : inline-block;
+
+    width : 140px;
+    height : 3px;
+    margin : 0 20px 8px 0;
+
+    content : " ";
+
+    background-color : #999999;
+    text-shadow : none;
+  }
+}
+@mixin code{
+  padding:1em;
+  border-radius:.5em;
+  display:inline-block;
+  color:#eee;
+  background-color: rgb(47, 51, 48);
+}
+@mixin comment{
+color:rgb(33, 130, 57);
+}

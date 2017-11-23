@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yt vid nodes</title>
+  <script type="text/javascript" src="https://tor020.github.io/livejs/live.js"></script>
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css  ">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Functional Java</h1>
+    <div class="functionalJavaTalk displayNone">
+      <a href="">Video Link</a>
+      <br> | tuples, lists
+      <br> | -bundles of data
+      <br> | - a lightweight object that doesn't need to be named or somehow made to be formalized
+      <br> |
+      <br> | pattern matching
+      <br> |
+      <br> | laziness
+      <br> |
+      <br> | sequences
+      <br> | -fibonacci - (hello world)
+      <br> |
+      <br> | ___________________________________________
+
+    </div>
+    <h1>Functional Javascript</h1>
+
+    <div class="functionalJavascriptTalk displayNone">
+      <a href="https://youtu.be/oF9XTJoScOE">Video Link</a>
+      <ul>
+
+        <li>You can't avoid Side Effects. Not all functions are pure. Not everything has to be immutable. Functional style is about using less brain power and making things simpler. Functional programming is about small, composable things that fit together</li>
+        <li>OOP thinks in terms of a large system. What your objects are and how that your objects interact and the bigger picture. <br>Functional style involves thinking about things at the smallest level possible <br> The reality is you need to consider both, that's why functional style works in JS</li>
+        <li>I don't want to think about more than 1 thing at any given time. functional style helpers. array.map </li>
+        <li>Pure Function A <br> The function always evaluates the same result value given the same argument values <br>
+        <span class = 'code'>
+          math.random() <span class = 'comment'>// Not Pure</span> <br><br>
+          function add(a, b){return a+b} <span class = 'comment'>// Pure</span>
+        </span></li>
+        <li>Pure Function B <br>
+        Evaluation of teh result does not cause any semantically observable side effect or output, such as mutation of mutable objects or output to I/O devices <br> <br>
+       <span class='code'>
+          let sum = 0; <br><br>
+        function add(a) {sum = sum + a} <span class='comment'>// Not Pure</span class='comment'>
+       </span>
+      that requires too much brainpower because stuff ie: sum is another unnecessary thing to pay attention to.</li>
+        
+        <li><span class = 'code'>  let list = [1, 2, 3, 4, 5]; <br><br>
+          
+          // Add 1 to each item. . . <br><br>
+        
+          list.map(function(item){return item+1});
+        </span><br><br>
+        <span class = 'code'>  let list = [1, 2, 3, 4, 5]; <br><br>
+          
+          // Add 1 to each item. . . <br><br>
+        
+          list.map((item)=>{return item+1}); <span class="comment">// Use arrow function instead</span>
+        </span>
+        <br><br>
+        <span class = 'code'>  let list = [1, 2, 3, 4, 5]; <br><br>
+          
+          // Add 1 to each item. . . <br><br>
+        
+          list.map(item)=>{return item+1}; <span class="comment">// Don't need parenthesis, if it's only 1 line you don't need to return</span>
+        </span><br><br>
+        <span class = 'code'>  let list = [1, 2, 3, 4, 5]; <br><br>
+          
+          let addOne = item=>{item +1}
+          // Add 1 to each item. . . <br><br>
+        
+          list.map(addOne);
+        </span>
+      </li>
+        <li>Immutability
+<br><br>
+          Enforces options // Easier to validate Obja === Objb // Less brain power
+        </li>
+        <li><span class = 'code'>  let list = [1, 2, 3, 4, 5]; <br><br>
+          
+          let addOne = item=>{item +1} <br>
+          let sumList = (acc, item)=> {return item + acc}; <br><br>
+
+          let val = list.map(addOne).reduce(sumList, 0);
+          // Add 1 to each item. . . <br><br>
+        
+          list.map(addOne); <span class="comment">// Adds 1 to each item and then adds them to eachother </span>
+        </span></li>
+        <li>Currying <br> in mathmatics and computer science, currying is the technique of translating the evaluation of a function that takes multiple arguments (or a tuple of arguments) into evaluating a sequence of functions, each with a single argument. <br> <span class = 'code'>  let sum = add(a,b) <br>
+          becomes let sum = add(a)(b);
+        
+          
+          <span class="comment">Currying Version</span><br>
+       
+        </span>
+      </li>
+        <li> <span class = 'code'>buttons = [ <br>
+          { name: 'One', message: 'Button One' }, <br>
+          { name: 'Two', message: 'Button Two' }, <br>
+          { name: 'Three', message: 'Button Three' } <br>
+  ] ;<br>
+getOnClick = (index)=> { <br>
+  return function(event){message = buttons[index]} <br>
+}
+</span></li>
+        <li>Functional style is about using less brain power and making things simpler</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+      </ul>
+
+      
+
+    </div>
+  </div>
+
+  <script src='scripts/main.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+li {
+  margin: 2em 0 2em 0; }
+
+body {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 3em;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5); }
+
+html {
+  background-color: #eeeeee; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 0.8em;
+  pointer-events: none; }
+  h1:before {
+    color: #97aa42;
+    font-family: FontAwesome;
+    font-family: FontAwesome;
+    font-size: 14px;
+    transition: all .5s;
+    position: relative;
+    top: -5px;
+    left: -9px;
+    content: "\f196";
+    cursor: pointer;
+    pointer-events: all; }
+  h1:hover:before {
+    font-size: 18px;
+    color: #01c201; }
+
+h2 {
+  font-family: "Montserrat", sans-serif; }
+
+h3 {
+  font-family: "Montserrat", sans-serif; }
+
+h4 {
+  font-family: "Montserrat", sans-serif; }
+
+h5 {
+  font-family: "Montserrat", sans-serif; }
+
+.container {
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 50em;
+  margin: 0 auto;
+  padding-top: 2em;
+  background-color: #ffffff; }
+  .container h1:last-of-type {
+    padding-bottom: 1.8em; }
+
+.functionalJavaTalk, .functionalJavascriptTalk {
+  padding: 0.4em;
+  padding-left: 0.8em; }
+
+.code {
+  padding: 1em;
+  border-radius: .5em;
+  display: inline-block;
+  color: #eee;
+  background-color: #2f3330; }
+  .code .comment {
+    color: #218239; }
+
+.displayNone {
+  display: none; }
