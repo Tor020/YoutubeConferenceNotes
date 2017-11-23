@@ -7,3 +7,4 @@ gulp command will automatically setup the watch task and compile scss into css i
 
 This is just some youtube conference notes
 
+Has an event bubbling bug.
